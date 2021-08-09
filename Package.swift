@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PLCrashReporter",
+    name: "CSCrashReporter",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_10),

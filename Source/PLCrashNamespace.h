@@ -35,7 +35,7 @@
  * This may be used to avoid symbol conflicts between multiple libraries
  * that may both incorporate PLCrashReporter.
  */
-// #define PLCRASHREPORTER_PREFIX AcmeCo
+#define PLCRASHREPORTER_PREFIX CS
 
 
 // We need two extra layers of indirection to make CPP substitute
@@ -69,6 +69,7 @@
 #define PLCrashReportSymbolInfo             PLNS(PLCrashReportSymbolInfo)
 #define PLCrashReportSystemInfo             PLNS(PLCrashReportSystemInfo)
 #define PLCrashReportTextFormatter          PLNS(PLCrashReportTextFormatter)
+#define PLCrashReportTextFormat          PLNS(PLCrashReportTextFormat)
 #define PLCrashReportThreadInfo             PLNS(PLCrashReportThreadInfo)
 #define PLCrashReporter                     PLNS(PLCrashReporter)
 #define PLCrashSignalHandler                PLNS(PLCrashSignalHandler)
