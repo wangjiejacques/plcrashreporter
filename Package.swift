@@ -10,7 +10,7 @@ let package = Package(
         .tvOS(.v9)
     ],
     products: [
-        .library(name: "CrashReporter", targets: ["CrashReporter"])
+        .library(name: "CSCrashReporter", targets: ["CrashReporter"])
     ],
     targets: [
         .target(
@@ -35,7 +35,7 @@ let package = Package(
             cSettings: [
                 .define("PLCR_PRIVATE"),
                 .define("PLCF_RELEASE_BUILD"),
-                .define("PLCRASHREPORTER_PREFIX", to: ""),
+                .define("PLCRASHREPORTER_PREFIX", to: "CS_"),
                 .define("SWIFT_PACKAGE"), // Should be defined by default, Xcode 11.1 workaround.
                 .headerSearchPath("Dependencies/protobuf-c")
             ],
